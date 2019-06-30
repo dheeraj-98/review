@@ -25,7 +25,7 @@
         <div class="search">
             <br>
             <h2 class="ser_head">SEARCH REVIEWS</h2>
-            <form class="search_details" action="index.html" method="post">
+            <form class="search_details" action="index.html" method="post">{%csrf_token%}
                 <i class="fa fa-university fa-lg" aria-hidden="true"></i> <input id="inp_1" type="text" name="Institute" placeholder="institute" required><br>
                 <i class="fa fa-user fa-lg" aria-hidden="true"></i> <input id="inp_2" type="text" name="Faculty" placeholder="faculty"><br>
                 <input id="inp_3" type="submit" name="submit" value="SEARCH"><br>
