@@ -1,0 +1,95 @@
+body {
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    font-size: 25px;
+}
+ul {
+    list-style-type: none;
+    height: 35px;
+}
+li {
+    float: left;
+    color: white;
+}
+a.nav_link {
+    color: white;
+}
+#nav_log {
+    float: right;
+    margin-right: 45px;
+    line-height: 30px;
+}
+#nav_reg {
+    float: right;
+    margin-right: 15px;
+    padding-right: 10px;
+    border-right: 1px solid white;
+    line-height: 30px;
+}
+.search {
+    margin: auto;
+    margin-top: 5%;
+    height: 600px;
+    width: 450px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 25px;
+}
+input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+form {
+    display: inline-block;
+    text-align: center;
+}
+#inp_1 {
+    margin-top: 40px;
+}
+#inp_2 {
+    margin-top: 50px;
+}
+#inp_3 {
+    margin-top: 40px;
+    background-color: blue;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 30px 10px 30px;
+}
+
+.rev_redirect {
+    font-family: Trebuchet MS;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+#rev {
+    margin-top: 50px;
+}
+input {
+        width: 333px;
+}
+input[type=submit] {
+    width: unset;
+}
+.rate {
+    margin-top: 50px;
+}
+.fa-comments:before {
+    content: "\f086";
+    position: absolute;
+    margin-top: -24px;
+    margin-left: 317px;
+    opacity: 0.7;
+}
+textarea {
+    border-radius: 10px;
+}
