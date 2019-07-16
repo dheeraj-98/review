@@ -18,12 +18,14 @@ def register(request):
         mail_id = request.POST.get('email')
         user_name = request.POST.get('username')
         pass_word = request.POST.get('password')
+        print(pass_word,user_name,mail_id,occupation,full_name)
         user = User.objects.create(username=user_name,email=mail_id)
         user.set_password(pass_word)
         user.save()
         reg = Register.objects.create(name=full_name, occup=occupation, username=user_name)
         reg.save()
-        return render(request, 'main/login.html')
+        #return render(request, 'main/login.html')
+        return redirect('main-login')
     return render(request, 'main/register.html')
 
 def login(request):
@@ -39,7 +41,7 @@ def login(request):
             user = authenticate(username=u_name,password=pwd)
             if user is not None:
                 auth_login(request,user)
-                return redirect('main-home', {"user":user})
+                return redirect('main-home')
             else:
                 context["msg"] = "Wrong Credentials"
     return render(request,'main/login.html', context)
